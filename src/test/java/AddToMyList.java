@@ -1,4 +1,5 @@
 import BaseData.BaseLibrary;
+import Pages.MyListPage;
 import Pages.SearchPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,6 +16,7 @@ public class AddToMyList {
     BaseLibrary baseLibrary = new BaseLibrary();
 
     @Test(description = "Listeme Film Ekle")
+
     public void addToMyList() throws InterruptedException {
         MovieSearch movieSearch = new MovieSearch();
         movieSearch.searchMovie();
@@ -22,28 +24,13 @@ public class AddToMyList {
         searchPage.hoverOnMovie();
         sleep(5000);
 
-        try {
-            WebElement addToMyListIcon;
-            addToMyListIcon = driver.findElement(By.xpath("//button[@data-uia='add-to-my-list']"));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToMyListIcon);
-            sleep(5000);
-            baseLibrary.screenshot();
-            driver.findElement(By.xpath("(//li[@class='navigation-tab'])[5]")).click();
-            sleep(5000);
+        MyListPage myListPage = new MyListPage();
+        myListPage.addList();
 
-            searchPage.waitForRecepIvedik4ToBeVisible();
-            searchPage.hoverOnMovie();
-            baseLibrary.screenshot();
-            sleep(5000);
-
-            driver.quit();
-
-        } catch (Exception e) {
-
-            System.out.println("İçerik zaten Listem'e eklenmiş.");
-            driver.quit();
-        }
-
+        myListPage.listPage();
+        sleep(5000);
+        baseLibrary.screenshot();
+        driver.quit();
 
     }
 
