@@ -4,7 +4,6 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -50,7 +49,7 @@ public class BaseLibrary extends Browser {
             return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         } catch (Exception e) {
             System.out.println("Ekran görüntüsü alınırken hata oluştu: " + e.getMessage());
-            return new byte[0]; // Boş byte dizisi döndürerek hata önleniyor
+            return new byte[0];
         }
     }
 }

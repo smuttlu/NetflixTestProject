@@ -1,6 +1,5 @@
 package BaseData;
 
-import Pages.LoginPage;
 import io.qameta.allure.Step;
 
 public class UserData {

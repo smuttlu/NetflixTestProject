@@ -1,8 +1,6 @@
 import BaseData.BaseLibrary;
 import BaseData.Browser;
-import BaseData.UserData;
 import Pages.LoginPage;
-import Pages.SearchPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -12,8 +10,6 @@ public class SuccessfulLogin extends Browser {
 
     LoginPage loginPage = new LoginPage();
     BaseLibrary baseLibrary = new BaseLibrary();
-    UserData userData = new UserData();
-    SearchPage SearchPage = new SearchPage();
 
     @Test(description = "Başarılı Kullanıcı Girişi Testi")
     public void loginSuccessful() throws InterruptedException {

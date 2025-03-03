@@ -1,12 +1,8 @@
 import BaseData.BaseLibrary;
-import BaseData.Browser;
-import BaseData.UserData;
-import Pages.LoginPage;
 import Pages.SearchPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import static BaseData.Browser.driver;

@@ -1,6 +1,5 @@
 package BaseData;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -21,7 +20,7 @@ public class Browser {
     @AfterMethod
     public void closeBrowser() {
 
-            driver.quit();
+        driver.quit();
 
     }
 }

@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import static java.lang.Thread.sleep;
-
 public class SearchPage extends BaseLibrary {
 
     private By movieElement4 = By.xpath("//p[@class='fallback-text' and text()='Recep Ivedik 4']");

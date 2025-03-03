@@ -1,7 +1,5 @@
 import BaseData.BaseLibrary;
 import BaseData.Browser;
-import BaseData.UserData;
-import Pages.LoginPage;
 import Pages.SearchPage;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -14,7 +12,7 @@ public class MovieSearch {
     SearchPage searchPage = new SearchPage();
     BaseLibrary baseLibrary = new BaseLibrary();
 
-    @Test(description = "Listeme Film Ekle", invocationCount = 1) // Tek sefer çalıştır
+    @Test(description = "Listeme Film Ekle", invocationCount = 1)
     public void searchMovie() throws InterruptedException {
 
         Browser browser = new Browser();

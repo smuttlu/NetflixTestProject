@@ -24,7 +24,7 @@ public class LoginPage extends Browser {
     }
 
     @Step("Şifre Alanını Yanlış Bilgi ile Doldurur")
-    public LoginPage fillPass(String passwordd) {   //yanlış şifre
+    public LoginPage fillPass(String passwordd) {
         driver.findElement(By.cssSelector("[autocomplete='password']")).sendKeys(passwordd);
         return this;
     }

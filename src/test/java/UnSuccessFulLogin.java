@@ -1,7 +1,6 @@
 import BaseData.BaseLibrary;
 import BaseData.Browser;
 import Pages.LoginPage;
-import Pages.SearchPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 public class UnSuccessFulLogin extends Browser {
 
     LoginPage loginPage = new LoginPage();
-    SearchPage searchPage = new SearchPage();
     BaseLibrary baseLibrary = new BaseLibrary();
 
     @Test(description = "Başarısız Kullanıcı Girişi Testi")
