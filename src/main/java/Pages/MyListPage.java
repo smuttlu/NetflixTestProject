@@ -55,7 +55,5 @@ public class MyListPage {
             System.out.println("İçerik zaten Listem'de bulunmuyor.");
         }
         driver.quit();
-
-
     }
 }
