@@ -31,7 +31,7 @@ public class LoginPage extends Browser {
 
     @Step("Giriş Yap Butonuna Tıklanır")
     public LoginPage clickLoginButton() {
-        driver.findElement(By.cssSelector("[class='pressable_styles__a6ynkg0 button_styles__1kwr4ym0  default-ltr-cache-1mbafvh e1ax5wel2']")).click();
+        driver.findElement(By.xpath("//button[@data-uia='sign-in-button']")).click();
         return this;
     }
 }

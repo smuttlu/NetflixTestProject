@@ -23,6 +23,5 @@ public class SuccessfulLogin extends Browser {
         baseLibrary.screenshot();
         sleep(5000);
         baseLibrary.screenshot();
-
     }
 }
